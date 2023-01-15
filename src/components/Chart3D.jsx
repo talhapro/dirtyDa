@@ -28,7 +28,7 @@ const DoughnutChart = () => {
       position: "bottom",
       horizontalAlign: "center",
       floating: false,
-      fontSize: "16px",
+      fontSize: "13px",
       fontFamily: "Poppins",
       fontWeight: 500,
       labels: {
@@ -37,8 +37,8 @@ const DoughnutChart = () => {
       },
 
       itemMargin: {
-        horizontal: 5,
-        vertical: 4,
+        horizontal: 4,
+        vertical: 5,
       },
     },
     plotOptions: {
@@ -77,25 +77,25 @@ const DoughnutChart = () => {
         </div>
         <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4 mt-8 mb-8 gap-10">
           <div className="text-center">
-            <h1 className="text-2xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Token
             </h1>
             <p className="font-bold text-xl text-slate-200">Dirty Dog</p>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Symbol
             </h1>
             <p className="text-xl text-slate-200">DDOG</p>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Total Supply
             </h1>
             <p className="text-xl text-slate-200">1,000,000,000</p>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
             Blockchain
             </h1>
             <p className="text-xl text-slate-200">BSC</p>

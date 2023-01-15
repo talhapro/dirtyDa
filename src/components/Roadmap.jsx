@@ -13,7 +13,7 @@ const Roadmap = () => {
       <div class="bg-orange-700 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5  text-slate-200 font-bold">
         1
       </div>
-      <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 pr-40 pb-10 w-full">
+      <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 ">
         <div class="flex justify-between mb-4">
           <h2 class="font-bold text-slate-800 text-md">Phase 1</h2>
         </div>
