@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300&display=swap');
+
+/* Tailwind Default imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+      font-family: Bungee;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  html {
+    font-family: Poppins;
+  }
 }
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #F15A53;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+
+
+
+  
