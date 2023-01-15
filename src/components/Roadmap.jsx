@@ -13,7 +13,7 @@ const Roadmap = () => {
       <div class="bg-orange-700 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5  text-slate-200 font-bold">
         1
       </div>
-      <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 ">
+      <div class="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div class="flex justify-between mb-4">
           <h2 class="font-bold text-slate-800 text-md">Phase 1</h2>
         </div>
@@ -35,7 +35,7 @@ const Roadmap = () => {
       <div class="bg-orange-700 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5 text-slate-200 font-bold">
         2
       </div>
-      <div class="pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 w-full">
+      <div class="pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div class="flex justify-between mb-4">
           <h2 class="font-bold text-slate-800 text-md">Phase 2</h2>
         </div>
@@ -61,7 +61,7 @@ const Roadmap = () => {
       <div class="bg-orange-700 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5 text-slate-200 font-bold">
         3
       </div>
-      <div class="block pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 w-full">
+      <div class="block pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div class="flex justify-between mb-4">
           <h2 class="font-bold text-slate-800 text-md">Phase 3</h2>
         </div>

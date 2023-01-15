@@ -10,6 +10,9 @@ module.exports = {
       lg: '1020px',
       xl: '1440px',
     },
+    container: {
+      center: true,
+    },
     extend: {},
   },
   plugins: [],
