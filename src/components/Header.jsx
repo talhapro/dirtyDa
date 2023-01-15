@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       {/* //   <!-- Nav Container --> */}
-      <div className="w-full bg-slate-800">
+      <div className="md:w-full lg:w-full bg-slate-800">
         <nav className="relative container mx-auto p-6">
           {/* <!-- Flex Container For All Items --> */}
           <div className="flex items-center justify-between">
@@ -29,7 +29,7 @@ const Header = () => {
               {/* <!-- Logo --> */}
               <img src={img} alt="" className="h-14" />
               {/* <!-- Left Menu --> */}
-              <div className="hidden space-x-8 font-bold lg:flex items-center md:flex ">
+              <div className="hidden space-x-8 font-bold lg:flex items-center md:hidden ">
                 <a
                   href="/#"
                   className="text-grayishViolet hover:text-slate-700 px-3"
@@ -192,7 +192,7 @@ const Header = () => {
             {/* <!-- Hamburger Button --> */}
             <button
               id="menu-btn"
-              className={`z-40 block hamburger md:hidden focus:outline-none ${
+              className={`z-40 block hamburger lg:hidden focus:outline-none ${
                 isOpen ? "open" : ""
               }`}
               type="button"
