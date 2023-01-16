@@ -5,6 +5,7 @@ const DoughnutChart = () => {
   const [options, setOptions] = useState({
     chart: {
       type: "donut",
+      width: '100%'
     },
     fill: {
       type: "solid",
@@ -38,8 +39,8 @@ const DoughnutChart = () => {
       },
 
       itemMargin: {
-        horizontal: 4,
-        vertical: 5,
+        horizontal: 1,
+        vertical: 2,
       },
     },
     plotOptions: {
@@ -107,7 +108,7 @@ const DoughnutChart = () => {
             options={options}
             series={series}
             type="donut"
-            width="350"
+            height="370"
           />
         </div>
         <div>
