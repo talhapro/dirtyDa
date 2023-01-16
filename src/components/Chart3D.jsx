@@ -39,8 +39,8 @@ const DoughnutChart = () => {
       },
 
       itemMargin: {
-        horizontal: 1,
-        vertical: 2,
+        horizontal: 6,
+        vertical: 3.5,
       },
     },
     plotOptions: {
@@ -103,12 +103,20 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="flex">
+        <div className="md:hidden sm:flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            height="370"
+            height="380"
+          />
+        </div>
+        <div className="md:flex sm:hidden">
+          <ApexCharts
+            options={options}
+            series={series}
+            type="donut"
+            width="480"
           />
         </div>
         <div>
