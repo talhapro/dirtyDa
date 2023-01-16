@@ -103,7 +103,7 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="md:hidden lg:hidden xl:hidden sm:flex">
+        <div className="lg:hidden">
           <ApexCharts
             options={options}
             series={series}
@@ -111,7 +111,7 @@ const DoughnutChart = () => {
             height="380"
           />
         </div>
-        <div id="dchart" className=" md:flex sm:hidden">
+        <div  className="sm:hidden md:hidden lg:flex">
           <ApexCharts
             options={options}
             series={series}

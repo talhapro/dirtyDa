@@ -62,9 +62,3 @@
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
   }
 
-
- @media screen and (max-width: 400px) {
-  #dchart {
-    display: none;
-  }
-} 
