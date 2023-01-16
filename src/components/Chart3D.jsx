@@ -102,7 +102,14 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        
+        <div className="flex">
+          <ApexCharts
+            options={options}
+            series={series}
+            type="donut"
+            width="350"
+          />
+        </div>
         <div>
           <h1 className="mt-12 text-white text-3xl">TAXES</h1>
           <div className="flex mt-10 items-center justify-center">
