@@ -71,8 +71,8 @@ const DoughnutChart = () => {
   });
   const [series, setSeries] = useState([15, 25, 25, 10, 10, 10, 5]);
   return (
-    <section className="bg-slate-800">
-      <div className="mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32">
+    <section className="bg-slate-800 ">
+      <div className=" container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32 ">
         <div>
           <h1 className="-mt-4 text-white text-3xl mb-4">TOKENOMICS</h1>
         </div>
@@ -102,12 +102,20 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="flex">
+        <div className="sm:hidden md:flex lg:flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
             width="480"
+          />
+        </div>
+        <div className="sm:flex md:hidden lg:hidden xl:hidden">
+          <ApexCharts
+            options={options}
+            series={series}
+            type="donut"
+            width="410"
           />
         </div>
         <div>

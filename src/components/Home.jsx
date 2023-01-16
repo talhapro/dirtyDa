@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header />
-     {/* <DoughnutChart /> */}
+     <DoughnutChart />
      <TokenData />
      <Roadmap />
     </>
@@ -17,3 +17,4 @@ const Home = () => {
 };
 
 export default Home;
+

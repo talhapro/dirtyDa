@@ -27,7 +27,7 @@ const Header = () => {
             {/* <!-- Flex Container For Logo/Menu --> */}
             <div className="flex items-center mx-auto space-x-20">
               {/* <!-- Logo --> */}
-              <img src={img} alt="" className="h-14" />
+              <img src={img} alt="" className=" w-auto h-24" />
               {/* <!-- Left Menu --> */}
               <div className="hidden space-x-8 font-bold lg:flex items-center md:hidden lg:overflow-clip">
                 <a
