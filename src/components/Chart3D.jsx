@@ -24,7 +24,7 @@ const DoughnutChart = () => {
     },
 
     legend: {
-      show: false,
+      show: true,
       position: "bottom",
       horizontalAlign: "center",
       floating: false,
