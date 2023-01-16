@@ -111,7 +111,7 @@ const DoughnutChart = () => {
             height="380"
           />
         </div>
-        <div className="md:flex sm:hidden">
+        <div id="dchart" className=" md:flex sm:hidden">
           <ApexCharts
             options={options}
             series={series}
