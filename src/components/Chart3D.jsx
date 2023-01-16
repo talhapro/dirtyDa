@@ -24,7 +24,7 @@ const DoughnutChart = () => {
     },
 
     legend: {
-      show: true,
+      show: false,
       position: "bottom",
       horizontalAlign: "center",
       floating: false,
@@ -102,20 +102,12 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="sm:hidden md:flex lg:flex">
+        <div className="flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            width="480"
-          />
-        </div>
-        <div className="sm:flex md:hidden lg:hidden xl:hidden">
-          <ApexCharts
-            options={options}
-            series={series}
-            type="donut"
-            width="410"
+            width="400"
           />
         </div>
         <div>
