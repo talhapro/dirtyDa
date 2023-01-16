@@ -28,9 +28,11 @@ const DoughnutChart = () => {
       position: "bottom",
       horizontalAlign: "center",
       floating: false,
-      fontSize: "13px",
+      fontSize: "12.5px",
       fontFamily: "Poppins",
       fontWeight: 500,
+      width: 450,
+      height: undefined,
       labels: {
         colors: ["#FFF"],
         useSeriesColors: true,
@@ -101,12 +103,12 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="flex items-center justify-center text-white container">
+        <div className="flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            width="490"
+            width="480"
           />
         </div>
         <div>

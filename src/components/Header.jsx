@@ -29,7 +29,7 @@ const Header = () => {
               {/* <!-- Logo --> */}
               <img src={img} alt="" className="h-14" />
               {/* <!-- Left Menu --> */}
-              <div className="hidden space-x-8 font-bold lg:flex items-center md:hidden ">
+              <div className="hidden space-x-8 font-bold lg:flex items-center md:hidden lg:overflow-clip">
                 <a
                   href="/#"
                   className="text-grayishViolet hover:text-slate-700 px-3"
@@ -180,7 +180,7 @@ const Header = () => {
             </div>
 
             {/* <!-- Right Buttons Menu --> */}
-            <div className="hidden mx-auto items-center space-x-6 font-bold lg:flex">
+            <div className="hidden mx-auto items-center space-x-6 font-bold lg:flex lg:overflow-clip">
               <a
                 href="/#"
                 className="px-8 py-3 font-bold text-white bg-orange-700 rounded-full hover:opacity-70"
