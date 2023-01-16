@@ -31,7 +31,6 @@ const DoughnutChart = () => {
       fontSize: "12.5px",
       fontFamily: "Poppins",
       fontWeight: 500,
-      width: 450,
       height: undefined,
       labels: {
         colors: ["#FFF"],

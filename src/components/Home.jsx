@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header />
-     <DoughnutChart />
+     {/* <DoughnutChart /> */}
      <TokenData />
      <Roadmap />
     </>
