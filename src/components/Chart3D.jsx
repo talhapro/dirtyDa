@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ApexCharts from "react-apexcharts";
 
 const DoughnutChart = () => {
+
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 620;
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+
   const [options, setOptions] = useState({
     chart: {
       type: "donut",
@@ -103,22 +117,23 @@ const DoughnutChart = () => {
             <p className="text-xl text-slate-200">BSC</p>
           </div>
         </div>
-        <div className="lg:hidden">
+        <div className="flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            height="380"
+            height= {width < breakpoint ? '380' : '480'}
+            width= {width < breakpoint ? '380' : '480'}
           />
         </div>
-        <div  className="sm:hidden lg:flex">
+        {/* <div  className="sm:hidden lg:flex">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
             width="480"
           />
-        </div>
+        </div> */}
         <div>
           <h1 className="mt-12 text-white text-3xl">TAXES</h1>
           <div className="flex mt-10 items-center justify-center">
