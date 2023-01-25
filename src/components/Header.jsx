@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img from "../assets/dirty-dogs.png";
 import { ethers } from "ethers";
 import truncateEthAddress from 'truncate-eth-address'
 
 
-const backgroundSky = require('../assets/background-sky-1.png');
+
 
 const Header = () => {
+
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 620;
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpenHandler = () => {

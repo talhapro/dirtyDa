@@ -4,12 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '1020px',
-      xl: '1440px',
-    },
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '1020px',
+    //   xl: '1440px',
+    // },
     container: {
       center: true,
     },
