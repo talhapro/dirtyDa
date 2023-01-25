@@ -1,20 +1,25 @@
 import React from "react";
-import DoughnutChart from "./Chart3D";
+import Tokenomics from "./Tokenomics";
 
 import Header from "./Header";
 import Roadmap from "./Roadmap";
 import TokenData from "./TokenData";
+import HeroSection from "./HeroSection";
+import NftTokenDetails from "./NftTokenDetails";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <>
       <Header />
-     <DoughnutChart />
-     <TokenData />
-     <Roadmap />
+      <HeroSection />
+      <NftTokenDetails />
+      <Tokenomics />
+      <TokenData />
+      <Roadmap />
+      <Footer />
     </>
   );
 };
 
 export default Home;
-

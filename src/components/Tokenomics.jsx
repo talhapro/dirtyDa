@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ApexCharts from "react-apexcharts";
 
-const DoughnutChart = () => {
+const Tokenomics = () => {
 
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -86,7 +86,7 @@ const DoughnutChart = () => {
   });
   const [series, setSeries] = useState([15, 25, 25, 10, 10, 10, 5]);
   return (
-    <section className="bg-slate-800 ">
+    <section className="">
       <div className=" container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32 ">
         <div>
           <h1 className="-mt-4 text-white text-3xl mb-4">TOKENOMICS</h1>
@@ -122,8 +122,8 @@ const DoughnutChart = () => {
             options={options}
             series={series}
             type="donut"
-            height= {width < breakpoint ? '380' : '480'}
-            width= {width < breakpoint ? '380' : '480'}
+            height= {width < breakpoint ? '370' : '480'}
+            width= {width < breakpoint ? '370' : '480'}
           />
         </div>
         {/* <div  className="sm:hidden lg:flex">
@@ -154,4 +154,4 @@ const DoughnutChart = () => {
   );
 };
 
-export default DoughnutChart;
+export default Tokenomics;

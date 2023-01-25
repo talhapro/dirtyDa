@@ -17,6 +17,17 @@
     font-family: Poppins;
   }
 }
+
+/* @layer base {
+  body {
+    background-image:  url('../src/assets/dirty-dog-site-background.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+} */
+
 .hamburger {
     cursor: pointer;
     width: 24px;
