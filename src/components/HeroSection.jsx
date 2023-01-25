@@ -8,7 +8,7 @@ const HeroSection = () => {
     <>
     {/* HERO SECTION */}
     <section className="bg-center relative" style={{ backgroundImage: `url(${backgroundSky})` }}>
-      <img className='absolute lg:h-40 sm:h-40 lg:bottom-10 lg:left-20 sm:bottom-16 sm:left-8' src={dog1} alt="coverImage"></img>
+      <img className='absolute lg:h-40 h-40 lg:bottom-10 lg:left-20 bottom-16 left-8' src={dog1} alt="coverImage"></img>
     <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
   
       <h1 className="text-5xl font-bold leading-none text-slate-800 uppercase">
