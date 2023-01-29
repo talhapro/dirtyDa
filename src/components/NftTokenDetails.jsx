@@ -1,10 +1,12 @@
 import React from 'react'
 
+const greyBg = require('../assets/backgroundNf.png');
+
 const NftTokenDetails = () => {
   return (
     <>
     {/* NFT FEATURE */}
-    <section className="">
+    <section className="bg-center bg-cover relative -z-20 bg-no-repeat" style={{ backgroundImage: `url(${greyBg})` }}>
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
@@ -29,11 +31,6 @@ const NftTokenDetails = () => {
         </div>
       </div>
     </div>
-  </section>
-
-  {/* DDOG TOKEN INTRO */}
-
-  <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
       <div className="p-5 flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
         <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
@@ -175,6 +172,12 @@ const NftTokenDetails = () => {
         </div>
       </div>
     </div>
+  </section>
+
+  {/* DDOG TOKEN INTRO */}
+
+  <section className="text-gray-600 body-font">
+
   </section>
   </>
   )

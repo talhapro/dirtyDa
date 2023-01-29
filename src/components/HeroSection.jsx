@@ -1,5 +1,6 @@
 import React from 'react'
 import dog1 from "../assets/dog_1_pug.gif";
+import sky1 from "../assets/cloud-1.png";
 
 const backgroundSky = require('../assets/background-sky-1.png');
 
@@ -7,7 +8,8 @@ const HeroSection = () => {
   return (
     <>
     {/* HERO SECTION */}
-    <section className="bg-center relative" style={{ backgroundImage: `url(${backgroundSky})` }}>
+    <section className="bg-center relative -z-20" style={{ backgroundImage: `url(${backgroundSky})` }}>
+      <img className='absolute -z-10 ' src={sky1}></img>
       <img className='absolute lg:h-40 h-40 lg:bottom-10 lg:left-20 bottom-16 left-8' src={dog1} alt="coverImage"></img>
     <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
   
