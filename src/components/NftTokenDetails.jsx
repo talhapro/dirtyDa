@@ -1,5 +1,6 @@
 import React from 'react'
-
+import nftDog from '../assets/nfts-dog.png'
+import pixelToken from '../assets/pixel-token.png'
 
 
 const NftTokenDetails = () => {
@@ -12,17 +13,17 @@ const NftTokenDetails = () => {
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
           <img
             alt="Party"
-            src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            className="absolute inset-0 h-full w-full object-cover"
+            src={nftDog}
+            className="absolute inset-0 w-full h-full"
           />
         </div>
 
         <div className="lg:py-24 lg:text-left text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl text-white">
+          <h2 className="text-3xl font-bold sm:text-4xl text-slate-800">
             NFTs
           </h2>
 
-          <p className="mt-4 text-gray-200">
+          <p className="mt-4 text-slate-800 font-bold">
             Dirty Dog NFTs are the only way to earn $DDOG! The full
             collection of 4,900 will be released soon. You’ll be able mint
             Dirty Dog NFTs to have access to the play to earn games:
@@ -36,7 +37,8 @@ const NftTokenDetails = () => {
         <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
           <img
             alt=""
-            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939"
+            src={pixelToken}
+            className="w-48"
           />
         </div>
         <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
