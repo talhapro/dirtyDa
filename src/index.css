@@ -28,6 +28,98 @@
   }
 } */
 
+
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../src/assets/heroSectionMobile.jpg");
+  }
+
+  #mainMenu {
+    background-image: url("../src/assets/topHeader.jpg");
+  }
+
+  #tokenDetail {
+    background-image: url("../src/assets/tokenDetailMobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #tokenomics {
+    background-image: url("../src/assets/tokenomicsMobile.jpg");
+    
+  }
+
+  #tokenData {
+    background-image: url("../src/assets/tokenDataMobile.jpg");
+    
+  }
+
+  #roadMap {
+    background-image: url("../src/assets/roadmap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #footer {
+    background-image: url("../src/assets/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 577px) {
+  #hero {
+    background-image: url("../src/assets/heroSectionDesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #mainMenu {
+    background-image: url("../src/assets/topHeader.jpg");
+  }
+
+  #tokenDetail {
+    background-image: url("../src/assets/tokenDetaiDesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #tokenomics {
+    background-image: url("../src/assets/tokenomicsDesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #tokenData {
+    background-image: url("../src/assets/tokenDataDesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #roadMap {
+    background-image: url("../src/assets/roadmap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #footer {
+    background-image: url("../src/assets/footerDesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -44,7 +136,7 @@
     height: 2px;
     top: 0;
     left: 0;
-    background: #F15A53;
+    background: #92400e;
     transform: rotate(0);
     transition: all 0.5s;
   }

@@ -86,7 +86,7 @@ const Tokenomics = () => {
   });
   const [series, setSeries] = useState([15, 25, 25, 10, 10, 10, 5]);
   return (
-    <section className="">
+    <section id="tokenomics" className="">
       <div className=" container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32 ">
         <div>
           <h1 className="-mt-4 text-white text-3xl mb-4">TOKENOMICS</h1>

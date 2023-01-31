@@ -5,7 +5,7 @@ const Roadmap = () => {
     <section id="roadMap">
     <div className='flex flex-col items-center'>
 {/* <!-- component --> */}
-<h1 className="text-3xl text-slate-200 font-bold mb-4 ml-3 p-12">Roadmap</h1>
+<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12">Roadmap</h1>
 
 <ol >
   <li className="border-l-2 border-orange-600">

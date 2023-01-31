@@ -2,6 +2,7 @@ import React from "react";
 
 const TokenData = () => {
   return (
+    <section id="tokenData">
     <div className="container max-w-3xl px-4 mx-auto sm:px-8">
       <div className="py-8">
         <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">
@@ -172,6 +173,7 @@ const TokenData = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
