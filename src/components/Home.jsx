@@ -15,7 +15,6 @@ const Home = () => {
       <HeroSection />
       <NftTokenDetails />
       <Tokenomics />
-      <TokenData />
       <Roadmap />
       <Footer />
     </>

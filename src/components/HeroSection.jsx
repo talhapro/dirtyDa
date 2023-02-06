@@ -1,10 +1,11 @@
 import React from 'react'
+import bDp2 from '../assets/background-dp-2.png';
 
 const HeroSection = () => {
   return (
     <>
     {/* HERO SECTION */}
-    <section id='hero'>
+    <section id='hero' className='w-full h-[700px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp2})`}}>
     {/* <section> */}
       {/* <img className='absolute -z-10 ' src={sky1}></img> */}
       {/* <video src= {hVideo}

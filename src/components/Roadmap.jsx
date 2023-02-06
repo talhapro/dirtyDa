@@ -1,11 +1,12 @@
 import React from 'react'
+import bDp6 from '../assets/background-dp-6.png';
 
 const Roadmap = () => {
   return (
-    <section id="roadMap">
+    <section id="roadMap" className='w-full h-[2100px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp6})`}}>
     <div className='flex flex-col items-center'>
 {/* <!-- component --> */}
-<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12">Roadmap</h1>
+<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 2xl:mt-[700px]">Roadmap</h1>
 
 <ol >
   <li className="border-l-2 border-orange-600">

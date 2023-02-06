@@ -21,26 +21,38 @@
 /* @layer base {
   body {
     background-image:  url('../src/assets/dirty-dog-site-background.gif');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
   }
 } */
 
+/* #mainMenu {
+  background-image: url("../src/assets/background-dp-1.png");
+  
+}
 
+#hero {
+  background-image: url("../src/assets/background-dp-2.png");
+  background-repeat: no-repeat;
+} */
+
+/* #tokenDetail1 {
+  background-image: url("../src/assets/background-dp-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 608px;
+} */
 
 @media (max-width: 576px) {
-  #hero {
-    background-image: url("../src/assets/heroSectionMobile.jpg");
-  }
+  
 
-  #mainMenu {
-    background-image: url("../src/assets/topHeader.jpg");
-  }
+/*   
 
-  #tokenDetail {
-    background-image: url("../src/assets/tokenDetailMobile.jpg");
+  
+
+  #tokenDetail2 {
+    background-image: url("../src/assets/background-dp-1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,28 +80,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  } */
 }
 
 
 @media (min-width: 577px) {
-  #hero {
-    background-image: url("../src/assets/heroSectionDesktop.jpg");
+  /* #hero {
+    background-image: url("../src/assets/background-dp-2.png");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
   }
 
   #mainMenu {
-    background-image: url("../src/assets/topHeader.jpg");
-  }
-
-  #tokenDetail {
-    background-image: url("../src/assets/tokenDetaiDesktop.jpg");
+    background-image: url("../src/assets/background-dp-1.png");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
   }
+
 
   #tokenomics {
     background-image: url("../src/assets/tokenomicsDesktop.jpg");
@@ -117,7 +124,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  } */
 }
 
 .hamburger {

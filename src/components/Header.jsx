@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img from "../assets/dirty-dogs.png";
+import bDp1 from '../assets/background-dp-1.png';
 // import { ethers } from "ethers";
 import truncateEthAddress from "truncate-eth-address";
 
@@ -51,11 +52,11 @@ const Header = () => {
   //     console.log("Please Install Metamask!");
   //   }
   // }
-
+ 
   return (
     <>
       {/* //   <!-- Nav Container --> */}
-      <div id="mainMenu" className="relative">
+      <div id="mainMenu" className="relative w-full h-[155px] bg-cover bg-no-repeat" style={{backgroundImage: `url(${bDp1})`}}>
         <nav className="relative container mx-auto py-6">
           {/* <!-- Flex Container For All Items --> */}
           <div className="flex items-center justify-between">
