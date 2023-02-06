@@ -90,7 +90,7 @@ const Tokenomics = () => {
     <section id="tokenomics" className='w-full h-[1900px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp5})`}}>
       <div className=" container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32">
         <div>
-          <h1 className="text-slate-800 text-4xl mb-4 mt-12 2xl:mt-48">TOKENOMICS</h1>
+          <h1 className="text-slate-800 text-4xl mb-4 mt-48">TOKENOMICS</h1>
         </div>
         <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4 mt-8 mb-8 gap-10">
           <div className="text-center">
