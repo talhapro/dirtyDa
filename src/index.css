@@ -83,11 +83,11 @@
 } */
 
 
-@media (max-width: 639px) {
+@media (max-width: 600px) {
 
   #mainMenu {
     background-image: url("../src/assets/new/top-sky-mobile.png");
-    background-color: #86e1f5;
+    background-color: #5fcde4;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,13 +99,23 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 140vh;
   }
 
   #tokenDetail {
     background-color: #5fcde4;
-    height: 90vh;
+    height: 125vh;
   }
+
+  #tokenomics {
+    background-image: url("../src/assets/new/middle-cave.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 125vh;
+  }
+
+
 /* 
   #tokenomics {
     background-image: url("../src/assets/tokenomicsDesktop.jpg");
