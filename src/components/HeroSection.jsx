@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
     {/* HERO SECTION */}
-    <section id='hero' className='w-full h-[700px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp2})`}}>
+    <section id='hero' className=''>
     {/* <section> */}
       {/* <img className='absolute -z-10 ' src={sky1}></img> */}
       {/* <video src= {hVideo}
@@ -16,14 +16,28 @@ const HeroSection = () => {
       {/* <img className='absolute lg:h-40 h-40 lg:bottom-10 lg:left-20 bottom-16 left-8' src={dog1} alt="coverImage"></img> */}
     <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
   
-      <h1 className="text-5xl font-bold leading-none text-slate-800 uppercase">
-        Get in early on the DDOG pre-sale.
+      <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase tracking-wider max-w-md">
+        Get in early on the AIDOGS pre-sale this month.
       </h1>
-      <p className="px-8 mt-6 mb-8 text-lg">
-        DDOG is the ultimate memecoin Play-to-Earn platform, and the
-        pre-sale has now sold out.
+      <p className="px-8 mt-10 mb-8 text-lg font-bold">
+        AIDOGS is the ultimate play-to-earn platform, and the
+        pre-sale will begin shortly.
       </p>
-      <p className="lg:text-xl font-extrabold mb-6 sm:text-lg">
+
+      <div className="flex flex-col px-5 mt-36">
+          <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center">
+          What is Dirty AI Dogs?
+          </h1>
+
+          <p className="mt-6 text-slate-800 font-bold text-md text-left tracking-wider">
+          Dirty AI Dogs is a side-scrolling, PC and mobile game with 5,555 AI Dog NFTs! Racing to earn their spot atop the leaderboard. 
+          Each dog will compete to earn their spot as the fastest dog in town!  Dirty AI Dogs is inspired by the classic “flappy birds” game. 
+          Dirty AI Dogs is a fast-paced, win2Earn, skill-driven competitive game, aiming for real sustainability in the web3 gaming space. 
+          </p>
+        </div>
+   
+
+      {/* <p className="lg:text-xl font-extrabold mb-6 sm:text-lg">
         USDT Raised: $15,852,002.96 / $20,000,000.00
       </p>
       <div className="flex flex-wrap justify-center">
@@ -48,7 +62,7 @@ const HeroSection = () => {
         >
           <h1>WIN $100K</h1>
         </a>
-      </div>
+      </div> */}
     </div>
   </section>
   </>

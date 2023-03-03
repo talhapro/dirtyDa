@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img from "../assets/dirty-dogs.png";
-import bDp1 from '../assets/background-dp-1.png';
+import bDp1 from '../assets/new/top-sky.png';
 // import { ethers } from "ethers";
 import truncateEthAddress from "truncate-eth-address";
 
@@ -56,12 +56,13 @@ const Header = () => {
   return (
     <>
       {/* //   <!-- Nav Container --> */}
-      <div id="mainMenu" className="relative w-full h-[155px] bg-cover bg-no-repeat" style={{backgroundImage: `url(${bDp1})`}}>
+      {/* <div id="mainMenu" className="relative bg-no-repeat object-fill bg-slate-400 h-52" style={{backgroundImage: `url(${bDp1})`}}> */}
+      <div id="mainMenu" className="">
         <nav className="relative container mx-auto py-6">
           {/* <!-- Flex Container For All Items --> */}
           <div className="flex items-center justify-between">
             {/* <!-- Flex Container For Logo/Menu --> */}
-            <div className="flex items-center mx-auto space-x-20">
+            <div className="flex items-center ml-10 space-x-20">
               {/* <!-- Logo --> */}
               <img src={img} alt="" className=" w-auto h-24" />
               {/* <!-- Left Menu --> */}

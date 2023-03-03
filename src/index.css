@@ -44,11 +44,10 @@
   height: 608px;
 } */
 
-@media (max-width: 576px) {
-  
 
-/*   
 
+/* 
+@media (min-width: 576px) {
   
 
   #tokenDetail2 {
@@ -80,24 +79,34 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  } */
-}
-
-
-@media (min-width: 577px) {
-  /* #hero {
-    background-image: url("../src/assets/background-dp-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
+} */
+
+
+@media (max-width: 639px) {
 
   #mainMenu {
-    background-image: url("../src/assets/background-dp-1.png");
-    background-repeat: no-repeat;
+    background-image: url("../src/assets/new/top-sky-mobile.png");
+    background-color: #86e1f5;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
   }
 
+  #hero {
+    background-image: url("../src/assets/new/midsky-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
 
+  #tokenDetail {
+    background-color: #5fcde4;
+    height: 90vh;
+  }
+/* 
   #tokenomics {
     background-image: url("../src/assets/tokenomicsDesktop.jpg");
     background-repeat: no-repeat;
