@@ -1,22 +1,26 @@
-import React from 'react'
-import bDp7 from '../assets/background-dp-7.png';
+import React from "react";
+import bDp7 from "../assets/background-dp-7.png";
+import bGrass from "../assets/new/bottem-grass.png";
 import img from "../assets/dirty-dogs.png";
 const Footer = () => {
   return (
-    <footer id="footer" aria-label="Site Footer" className='w-full h-[700px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp7})`}}>
-  <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-    <div className="sm:flex sm:items-center sm:justify-between mt-[500px]">
-      <div className="flex justify-center text-teal-600 sm:justify-start">
-      <img src={img} alt="" className=" w-auto h-24" />
+    <section id="footer" className="relative">
+      <img
+        src={bGrass}
+        alt="Bottom Grass Part"
+        className="absolute h-auto w-full -top-44"
+      />
+      <div className="flex flex-col absolute items-center right-12">
+        <div className="">
+          <img src={img} alt="" className=" w-auto h-44" />
+        </div>
+
+        <p className="pt-12 text-slate-200">
+          Copyright &copy; 2023. All rights reserved.
+        </p>
       </div>
+    </section>
+  );
+};
 
-      <p className="mt-4 font-bold text-center text-sm text-slate-200 lg:mt-0 lg:text-right">
-        Copyright &copy; 2023. All rights reserved.
-      </p>
-    </div>
-  </div>
-</footer>
-  )
-}
-
-export default Footer
+export default Footer;

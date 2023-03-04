@@ -293,7 +293,7 @@ const Tokenomics = () => {
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex">
           <ApexCharts
             options={options}
             series={series}
