@@ -99,12 +99,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 140vh;
+    height: 1300px;
   }
 
   #tokenDetail {
     background-color: #5fcde4;
-    height: 125vh;
+    height: 1160px;
   }
 
   #tokenomics {
