@@ -1,27 +1,24 @@
 import { useState, useEffect } from "react";
 import ApexCharts from "react-apexcharts";
-import upperRock from '../assets/new/down-rock-mobile.png';
-import leftRock from '../assets/new/left-cave.png';
-import rightRock from '../assets/new/right-cave.png';
+import upperRock from "../assets/new/down-rock-mobile.png";
+import leftRock from "../assets/new/left-cave.png";
+import rightRock from "../assets/new/right-cave.png";
 const Tokenomics = () => {
-
-
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 620;
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
+    const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
 
     // Return a function from the effect that removes the event listener
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-
   const [options, setOptions] = useState({
     chart: {
       type: "donut",
-      width: '100%'
+      width: "100%",
     },
     fill: {
       type: "solid",
@@ -88,152 +85,168 @@ const Tokenomics = () => {
   });
   const [series, setSeries] = useState([15, 25, 25, 10, 10, 10, 5]);
   return (
-    <section id="tokenomics" className='relative'>
-    <img src={leftRock} alt="mountain-clif"  className='h-[2000px] w-[100px] sm:hidden absolute left-0 '/>
-     <img src={upperRock} alt="mountain-clif"  className='w-[500px] sm:hidden absolute -top-52'/>
-     
-     {/* <img src={rightRock} alt="mountain-clif"  className='w-[500px] sm:hidden absolute -top-52'/> */}
-     
-      <div className=" container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-16 md:px-0 lg:px-32 absolute -top-20">
+    <section id="tokenomics" className="relative">
+      <img
+        src={leftRock}
+        alt="mountain-clif"
+        className="h-[2000px] w-[100px] sm:hidden absolute left-0 "
+      />
+      <img
+        src={upperRock}
+        alt="mountain-clif"
+        className="w-[500px] sm:hidden absolute -top-52"
+      />
 
-      {/* Token Features */}
+      {/* <img src={rightRock} alt="mountain-clif"  className='w-[500px] sm:hidden absolute -top-52'/> */}
 
-      <div className="p-5 flex mb-10 sm:flex-row flex-col">
-        <div className="">
-          <h1 className="text-slate-800 text-3xl font-bold mb-2">
-            DIRTY DOG TOKEN
-          </h1>
-          <p className="leading-relaxed font-bold text-lg pt-6 pb-6">
-            The Dirty Dog Token ($DDOG) is the native token of the Dirty Dog
-            ecosystem. Some of the Dirty Dog utilities are:
-          </p>
-          <div className="flex flex-col mt-6">
-            {/* Item 1 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">Staking</p>
-              </div>
-            </div>
-            {/* Item 2 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">NFT Staking</p>
-              </div>
-            </div>
-            {/* Item 3 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">Daily Quest</p>
-              </div>
-            </div>
-            {/* Item 4 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">Weekly Quest</p>
-              </div>
-            </div>
-            {/* Item 5 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">Leaderboard Contest</p>
-              </div>
-            </div>
-            {/* Item 5 */}
-            <div className=" inline-block">
-              <div className="flex pr-2 h-full items-center mb-3">
-                <svg
-                  className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-                <p className="title-font font-bold">Tournament Mode</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="flex flex-col px-12 top-36 absolute">
+        <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center pt-6">
+          DIRTY AI DOGS TOKEN
+        </h1>
 
-        <div>
-          <h1 className="text-slate-800 text-4xl mb-4 mt-48">TOKENOMICS</h1>
+        <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800">
+        The Dirty AI Dogs Token ($AIDOGS) is the native token of the Dirty AI Dogs ecosystem. 
+        Some of the Dirty AI Dogs utilities are:</p>
+
+        {/* Item #1 */}
+        <div className="flex flex-row items-center text-slate-800 pt-8 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Staking</p>
+        </div>
+
+        {/* Item #2 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">NFT Rentals</p>
+        </div>
+        
+
+        {/* Item #3 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Leaderboard Contest</p>
+        </div>
+
+        {/* Item #4 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Daily Quest</p>
+        </div>
+
+         {/* Item #5 */}
+         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Weekly Quest</p>
+        </div>
+
+        {/* Item #6 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Tournament Mode</p>
+        </div>
+
+        {/* Item #6 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+        <svg
+              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
+            </svg>
+            <p className="text-lg font-bold">Monthly Jackpot Contest</p>
+        </div>
+      </div>
+
+        {/* TOKENOMICS */}
+      <div className="absolute bottom-96">
+      <div>
+          <h1 className="text-slate-800 text-4xl mb-4 mt-48 text-center">TOKENOMICS</h1>
         </div>
         <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4 mt-8 mb-8 gap-10">
           <div className="text-center">
@@ -270,7 +283,11 @@ const Tokenomics = () => {
             width= {width < breakpoint ? '370' : '480'}
           />
         </div>
-        {/* <div  className="sm:hidden lg:flex">
+      </div>
+
+      {/* Token Features */}
+
+      {/* <div  className="sm:hidden lg:flex">
           <ApexCharts
             options={options}
             series={series}
@@ -278,22 +295,6 @@ const Tokenomics = () => {
             width="480"
           />
         </div> */}
-        <div>
-          <h1 className="mt-12 text-slate-800 text-3xl">TAXES</h1>
-          <div className="flex mt-10 items-center justify-center">
-            <h1 className="mx-4 text-xl text-slate-200">Buy Tax:</h1>
-            <p className="mx-4 font-semibold text-slate-200">3%</p>
-            <p className="mx-4 font-semibold text-slate-200">(2% Marketing)</p>
-            <p className="mx-4 font-semibold text-slate-200">(1% Liquidity)</p>
-          </div>
-          <div className="flex mt-8 items-center justify-center">
-            <h1 className="mx-4 text-xl text-slate-200">Sell Tax:</h1>
-            <p className="mx-4 font-semibold text-slate-200">3%</p>
-            <p className="mx-4 font-semibold text-slate-200">(2% Marketing)</p>
-            <p className="mx-4 font-semibold text-slate-200">(1% Liquidity)</p>
-          </div>
-        </div>
-      </div>
 
       {/* <div className="container max-w-3xl px-4 mx-auto sm:px-8">
       <div className="py-8">
