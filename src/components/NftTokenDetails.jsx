@@ -16,7 +16,7 @@ const NftTokenDetails = () => {
     <img src={PugDog} alt="Pug Dog Gif" className='absolute w-44 -top-64 left-20'/>
     <img src={SMountain} alt="mountain-clif-small"  className='w-[120px] sm:hidden absolute top-[260px] right-12'/>
     <img src={MMountain} alt="mountain-clif-small"  className='w-[800px] sm:hidden absolute -bottom-2'/>
-    <img src={AiDog} alt="mountain-clif-small"  className='w-48 absolute top-[870px] -right-4'/>
+    <img src={AiDog} alt="mountain-clif-small"  className='w-40 absolute top-[895px] right-0'/>
     <div className="flex flex-col px-5 mt-36 absolute top-[340px]">
           <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase text-center">
             NFTs
