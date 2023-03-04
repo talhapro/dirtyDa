@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ApexCharts from "react-apexcharts";
 import upperRock from "../assets/new/down-rock-mobile.png";
+import botRock from "../assets/new/bottom-cave.png";
 import leftRock from "../assets/new/left-cave.png";
 import rightRock from "../assets/new/right-cave.png";
 const Tokenomics = () => {
@@ -26,11 +27,13 @@ const Tokenomics = () => {
     labels: [
       "Liquidity 15%",
       "Presale 25%",
-      "In-Game Rewards 25%",
+      "Game Rewards 20%",
       "Marketing 10%",
       "Staking 10%",
       "CEX 10%",
       "Partnerships 5%",
+      "Teams 4%",
+      "Airdrop 1%",
     ],
 
     stroke: {
@@ -83,13 +86,23 @@ const Tokenomics = () => {
       },
     },
   });
-  const [series, setSeries] = useState([15, 25, 25, 10, 10, 10, 5]);
+  const [series, setSeries] = useState([15, 25, 20, 10, 10, 10, 5, 4, 1]);
   return (
     <section id="tokenomics" className="relative">
       <img
+        src={botRock}
+        alt="mountain-clif"
+        className="w-[500px] h-20 sm:hidden absolute bottom-0"
+      />
+      <img
         src={leftRock}
         alt="mountain-clif"
-        className="h-[2000px] w-[100px] sm:hidden absolute left-0 "
+        className="h-[2300px] w-[85px] sm:hidden absolute left-0"
+      />
+      <img
+        src={rightRock}
+        alt="mountain-clif"
+        className="h-[2300px] w-[85px] sm:hidden absolute right-0"
       />
       <img
         src={upperRock}
@@ -97,191 +110,233 @@ const Tokenomics = () => {
         className="w-[500px] sm:hidden absolute -top-52"
       />
 
-      {/* <img src={rightRock} alt="mountain-clif"  className='w-[500px] sm:hidden absolute -top-52'/> */}
-
-      <div className="flex flex-col px-12 top-36 absolute">
+      <div className="flex flex-col px-12 top-44 absolute">
         <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center pt-6">
           DIRTY AI DOGS TOKEN
         </h1>
 
         <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800">
-        The Dirty AI Dogs Token ($AIDOGS) is the native token of the Dirty AI Dogs ecosystem. 
-        Some of the Dirty AI Dogs utilities are:</p>
+          The Dirty AI Dogs Token ($AIDOGS) is the native token of the Dirty AI
+          Dogs ecosystem. Some of the Dirty AI Dogs utilities are:
+        </p>
 
         {/* Item #1 */}
         <div className="flex flex-row items-center text-slate-800 pt-8 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Staking</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Staking</p>
         </div>
 
         {/* Item #2 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">NFT Rentals</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">NFT Rentals</p>
         </div>
-        
 
         {/* Item #3 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Leaderboard Contest</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Leaderboard Contest</p>
         </div>
 
         {/* Item #4 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Daily Quest</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Daily Quest</p>
         </div>
 
-         {/* Item #5 */}
-         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Weekly Quest</p>
+        {/* Item #5 */}
+        <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Weekly Quest</p>
         </div>
 
         {/* Item #6 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Tournament Mode</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Tournament Mode</p>
         </div>
 
         {/* Item #6 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
-        <svg
-              className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-              ></path>
-            </svg>
-            <p className="text-lg font-bold">Monthly Jackpot Contest</p>
+          <svg
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+          <p className="text-lg font-bold">Monthly Jackpot Contest</p>
         </div>
       </div>
 
-        {/* TOKENOMICS */}
-      <div className="absolute bottom-96">
-      <div>
-          <h1 className="text-slate-800 text-4xl mb-4 mt-48 text-center">TOKENOMICS</h1>
-        </div>
-        <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4 mt-8 mb-8 gap-10">
-          <div className="text-center">
+      {/* TOKENOMICS */}
+      <div className="absolute bottom-28">
+        <h1 className="text-slate-800 text-4xl mb-4 text-center">TOKENOMICS</h1>
+
+        {/* SET 1 */}
+        <div className="flex flex-row justify-center mt-12">
+          {/* ITEM 1 */}
+          <div className="mx-8 text-center">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Token
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">Dirty Dog</p>
+            <p className="font-bold text-xl text-slate-800 ">Dirty AI Dogs</p>
           </div>
-          <div className="text-center">
+          {/* ITEM 2 */}
+          <div className="mx-8 text-center">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Symbol
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">DDOG</p>
+            <p className="font-bold text-xl text-slate-800 ">AIDOGS</p>
           </div>
-          <div className="text-center">
+        </div>
+        {/* SET 2 */}
+        <div className="flex flex-row justify-center mt-12 items-center mb-16">
+          {/* ITEM 1 */}
+          <div className="mx-8 text-center">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Total Supply
             </h1>
-            <p className=" font-bold text-xl text-slate-800 ">1,000,000,000</p>
+            <p className="font-bold text-xl text-slate-800 ">1,000,000,000</p>
           </div>
-          <div className="text-center">
-            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
-            Blockchain
+          {/* ITEM 2 */}
+          <div className="mx-8 text-center">
+            <h1 className="text-lg text-deep-purple-accent-400 mb-2 text-slate-200">
+              Blockchain
             </h1>
-            <p className=" font-bold text-xl text-slate-800 ">BSC</p>
+            <p className="font-bold text-xl text-slate-800 ">BSC</p>
           </div>
         </div>
-        <div className="flex">
+
+        <div className="flex ">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            height= {width < breakpoint ? '370' : '480'}
-            width= {width < breakpoint ? '370' : '480'}
+            height={width < breakpoint ? "370" : "480"}
+            width={width < breakpoint ? "370" : "480"}
           />
+        </div>
+
+        <div className="flex flex-col justify-center mt-12 items-center mb-20">
+          {/* ITEM 1 */}
+          <div className="text-center">
+            <h1 className="text-3xl text-deep-purple-accent-400 mb-2 text-slate-200">
+              Taxes
+            </h1>
+            <h1 className="font-bold text-2xl text-slate-800 pt-8">
+              BUY TAX 3%
+            </h1>
+            <p className="font-bold text-md text-slate-800 pt-4">
+              (1% Liquidity)
+            </p>
+            <p className="font-bold text-md text-slate-800 pt-1">
+              (1% Jackpot Wallet)
+            </p>
+            <p className="font-bold text-md text-slate-800 pt-1">
+              (1% Marketing)
+            </p>
+          </div>
+          {/* ITEM 2 */}
+          <div className="text-center">
+            <h1 className="font-bold text-2xl text-slate-800 pt-12">
+              Sell TAX 3%
+            </h1>
+            <p className="font-bold text-md text-slate-800 pt-4">
+              (1% Liquidity)
+            </p>
+            <p className="font-bold text-md text-slate-800 pt-1">
+              (1% Jackpot Wallet)
+            </p>
+            <p className="font-bold text-md text-slate-800 pt-1">
+              (1% Marketing)
+            </p>
+          </div>
         </div>
       </div>
 

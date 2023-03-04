@@ -3,7 +3,7 @@ import bDp6 from '../assets/background-dp-6.png';
 
 const Roadmap = () => {
   return (
-    <section id="roadMap" className='w-full h-[2100px] bg-cover bg-no-repeat' style={{backgroundImage: `url(${bDp6})`}}>
+    <section id="roadMap" className='w-full h-[2100px] bg-cover bg-no-repeat'>
     <div className='flex flex-col items-center'>
 {/* <!-- component --> */}
 <h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 mt-[700px]">Roadmap</h1>
