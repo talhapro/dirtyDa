@@ -255,11 +255,11 @@ const Tokenomics = () => {
       </div>
 
       {/* TOKENOMICS */}
-      <div className="absolute bottom-28">
-        <h1 className="text-slate-800 text-4xl mb-4 text-center">TOKENOMICS</h1>
+      <div className="container absolute bottom-28">
+        <h1 className="text-slate-800 text-3xl mb-4 text-center">TOKENOMICS</h1>
 
         {/* SET 1 */}
-        <div className="flex flex-row justify-center mt-12">
+        <div className="flex flex-row justify-center mt-12 ">
           {/* ITEM 1 */}
           <div className="mx-8 text-center">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
@@ -293,13 +293,13 @@ const Tokenomics = () => {
           </div>
         </div>
 
-        <div className="flex ">
+        <div className="flex items-center">
           <ApexCharts
             options={options}
             series={series}
             type="donut"
-            height={width < breakpoint ? "370" : "480"}
-            width={width < breakpoint ? "370" : "480"}
+            height={width < breakpoint ? "360" : "480"}
+            width={width < breakpoint ? "360" : "480"}
           />
         </div>
 

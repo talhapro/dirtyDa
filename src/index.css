@@ -116,6 +116,12 @@
   }
 
 
+  #roadMap {
+    background-color: #5fcde4;
+    height: 1500px;
+  }
+
+
 /* 
   #tokenomics {
     background-image: url("../src/assets/tokenomicsDesktop.jpg");

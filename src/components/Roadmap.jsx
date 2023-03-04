@@ -3,10 +3,10 @@ import bDp6 from '../assets/background-dp-6.png';
 
 const Roadmap = () => {
   return (
-    <section id="roadMap" className='w-full h-[2100px] bg-cover bg-no-repeat'>
-    <div className='flex flex-col items-center'>
+    <section id="roadMap" className='relative'>
+    <div className='flex flex-col items-center absolute container top-20'>
 {/* <!-- component --> */}
-<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 mt-[700px]">Roadmap</h1>
+<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12">Roadmap</h1>
 
 <ol >
   <li className="border-l-2 border-orange-600">
@@ -16,7 +16,7 @@ const Roadmap = () => {
       </div>
       <div className="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div className="flex justify-between mb-4">
-          <h2 className="font-bold text-slate-800 text-md">Phase 1</h2>
+          <h2 className="font-bold text-slate-800 text-md">Quarter 4 2022</h2>
         </div>
         <div className="text-gray-700  flex flex-col">
             <p>- Release V1 Website </p>
@@ -25,8 +25,8 @@ const Roadmap = () => {
             <p>- Release V1 Whitepaper</p>
             <p>- Begin Game Development</p>
             <p>- NFT Development</p>
+            <p>- Staking Development</p>
             <p>- NFT Marketplace Development</p>
-            <p>- Community Building</p>
         </div>
       </div>
     </div>
