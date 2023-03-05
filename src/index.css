@@ -129,7 +129,7 @@
 }
 
 
-@media (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 768px) {
 
   #mainMenu {
     background-image: url("../src/assets/new/top-sky-mobile.png");
@@ -175,7 +175,7 @@
 }
 
 
-@media (min-width: 1020px) {
+/* @media (min-width: 1020px) {
 
   #mainMenu {
     background-image: url("../src/assets/new/top-sky-mobile.png");
@@ -218,7 +218,7 @@
     height: 300px;
   }
 
-}
+} */
 
 .hamburger {
     cursor: pointer;

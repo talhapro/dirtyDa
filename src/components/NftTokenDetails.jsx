@@ -11,13 +11,13 @@ const NftTokenDetails = () => {
     <>
     {/* NFT FEATURE */}
 
-    <section id="tokenDetail" className='relative'>
-    <img src={BMountain} alt="mountain-clif"  className='w-[500px]  absolute -top-40 -left-5 sm:-top-80 sm:w-[620px]'/>
+    <section id="tokenDetail" className='relative flex items-center justify-center'>
+    <img src={BMountain} alt="mountain-clif"  className='w-[500px]  absolute -top-40 -left-5 sm:-top-80 sm:w-auto'/>
     <img src={PugDog} alt="Pug Dog Gif" className='absolute w-44 -top-64 left-20 sm:-top-[420px] sm:w-56'/>
-    <img src={SMountain} alt="mountain-clif-small"  className='w-[120px]  absolute top-[260px] right-12 sm:w-[160px] sm:right-24 sm:top-60'/>
-    <img src={MMountain} alt="mountain-clif-small"  className='w-[800px]  absolute -bottom-2 sm:right-0'/>
-    <img src={AiDog} alt="mountain-clif-small"  className='w-40 absolute top-[895px] right-0 sm:top-[700px] sm:right-10 sm:w-56'/>
-    <div className="flex flex-col px-5 mt-36 absolute top-[340px] sm:left-16">
+    <img src={SMountain} alt="mountain-clif-small"  className='w-[120px]  absolute top-[260px] right-12 sm:w-[160px] sm:right-16 sm:top-64'/>
+    <img src={MMountain} alt="mountain-clif-small"  className='w-[480px]  absolute -bottom-2 sm:right-0'/>
+    <img src={AiDog} alt="mountain-clif-small"  className='absolute w-40 bottom-28 right-0 sm:bottom-36 sm:right-2 sm:w-52'/>
+    <div className="flex flex-col px-5 mt-36 absolute top-[340px] text-center">
           <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase text-center">
             NFTs
           </h1>

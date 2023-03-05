@@ -89,7 +89,7 @@ const Tokenomics = () => {
   });
   const [series, setSeries] = useState([15, 25, 20, 10, 10, 10, 5, 4, 1]);
   return (
-    <section id="tokenomics" className="relative">
+    <section id="tokenomics" className="relative flex items-center justify-center">
       <img
         src={botRock}
         alt="mountain-clif"
@@ -113,7 +113,7 @@ const Tokenomics = () => {
       <img
         src={upperRockMd}
         alt="mountain-clif"
-        className="w-[500px] hidden sm:block absolute -top-52 sm:w-[768px] sm:-top-60"
+        className="hidden sm:block absolute -top-56"
       />
 
       <div className="flex flex-col px-12 top-44 absolute">
@@ -299,7 +299,7 @@ const Tokenomics = () => {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="">
           <ApexCharts
             options={options}
             series={series}
