@@ -13,7 +13,7 @@ const Footer = () => {
       <img src={AiDog} alt="mountain-clif-small"  className='w-48 absolute -top-52 right-5 sm:w-56'/>
       <div className="flex flex-col absolute items-center justify-center">
         <div className="">
-          <img src={img} alt="" className=" w-auto h-44" />
+          <img src={img} alt="" className=" w-auto h-32 sm:h-48" />
         </div>
 
         <p className="pt-12 text-slate-200">
