@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ApexCharts from "react-apexcharts";
 import upperRock from "../assets/new/down-rock-mobile.png";
+import upperRockMd from "../assets/new/down-rock-md.png";
 import botRock from "../assets/new/bottom-cave.png";
 import leftRock from "../assets/new/left-cave.png";
 import rightRock from "../assets/new/right-cave.png";
@@ -92,22 +93,27 @@ const Tokenomics = () => {
       <img
         src={botRock}
         alt="mountain-clif"
-        className="w-[500px] h-20 sm:hidden absolute bottom-0"
+        className="w-[500px] h-20  absolute bottom-0 sm:w-[768px]"
       />
       <img
         src={leftRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px] sm:hidden absolute left-0"
+        className="h-[2300px] w-[85px] absolute left-0"
       />
       <img
         src={rightRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px] sm:hidden absolute right-0"
+        className="h-[2300px] w-[85px]  absolute right-0"
       />
       <img
         src={upperRock}
         alt="mountain-clif"
         className="w-[500px] sm:hidden absolute -top-52"
+      />
+      <img
+        src={upperRockMd}
+        alt="mountain-clif"
+        className="w-[500px] hidden sm:block absolute -top-52 sm:w-[768px] sm:-top-60"
       />
 
       <div className="flex flex-col px-12 top-44 absolute">
@@ -255,7 +261,7 @@ const Tokenomics = () => {
       </div>
 
       {/* TOKENOMICS */}
-      <div className="container absolute bottom-28">
+      <div className="flex flex-col container absolute bottom-28 items-center">
         <h1 className="text-slate-800 text-3xl mb-4 text-center">TOKENOMICS</h1>
 
         {/* SET 1 */}

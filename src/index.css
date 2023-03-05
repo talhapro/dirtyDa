@@ -83,7 +83,7 @@
 } */
 
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
   #mainMenu {
     background-image: url("../src/assets/new/top-sky-mobile.png");
@@ -126,35 +126,98 @@
     height: 300px;
   }
 
+}
 
-/* 
+
+@media (min-width: 481px) {
+
+  #mainMenu {
+    background-image: url("../src/assets/new/top-sky-mobile.png");
+    background-color: #5fcde4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+  }
+
+  #hero {
+    background-image: url("../src/assets/new/sky-md.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1300px;
+  }
+
+  #tokenDetail {
+    background-color: #5fcde4;
+    height: 1160px;
+  }
+
   #tokenomics {
-    background-image: url("../src/assets/tokenomicsDesktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../src/assets/new/middle-cave.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2300px;
   }
 
-  #tokenData {
-    background-image: url("../src/assets/tokenDataDesktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 
   #roadMap {
-    background-image: url("../src/assets/roadmap.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #5fcde4;
+    height: 1900px;
   }
 
   #footer {
-    background-image: url("../src/assets/footerDesktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #754128;
+    height: 300px;
+  }
+
+}
+
+
+@media (min-width: 1020px) {
+
+  #mainMenu {
+    background-image: url("../src/assets/new/top-sky-mobile.png");
+    background-color: #5fcde4;
     background-size: cover;
-  } */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+  }
+
+  #hero {
+    background-image: url("../src/assets/new/midsky-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1300px;
+  }
+
+  #tokenDetail {
+    background-color: #5fcde4;
+    height: 1160px;
+  }
+
+  #tokenomics {
+    background-image: url("../src/assets/new/middle-cave.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2300px;
+  }
+
+
+  #roadMap {
+    background-color: #5fcde4;
+    height: 1900px;
+  }
+
+  #footer {
+    background-color: #754128;
+    height: 300px;
+  }
+
 }
 
 .hamburger {
