@@ -1,12 +1,49 @@
 import React from 'react'
-import bDp6 from '../assets/background-dp-6.png';
+import rBottomGreen from '../assets/new/rock-bottom-mobile.png';
+import rBottomGreenMd from '../assets/new/rock-bottom-md.png';
+import rBottomGreenDesk from '../assets/new/rock-bottom-desktop.png';
+import cloud1 from '../assets/new/cloud-1.png';
+import cloud2 from '../assets/new/cloud-2.png';
+import cloud3 from '../assets/new/cloud-3.png';
 
 const Roadmap = () => {
   return (
-    <section id="roadMap" className='relative'>
-    <div className='flex flex-col items-center absolute container top-20'>
+    <section id="roadMap" className='relative flex items-center justify-center'>
+    <img
+        src={rBottomGreen}
+        alt="Green Bottom"
+        className="w-[500px] absolute -top-20 sm:hidden"
+      />
+      <img
+        src={rBottomGreenMd}
+        alt="Green Bottom"
+        className="w-[800px] absolute -top-52 hidden sm:block lm:hidden"
+      />
+      <img
+        src={cloud1}
+        alt="Cloud"
+        className="w-[250px] absolute top-80 left-20 hidden lm:block"
+      />
+      <img
+        src={cloud2}
+        alt="Cloud"
+        className="w-[250px] absolute bottom-96 left-20 hidden lm:block"
+      />
+      <img
+        src={cloud3}
+        alt="Cloud"
+        className="w-[250px] absolute top-[730px] right-32 hidden lm:block"
+      />
+      <img
+        src={rBottomGreenDesk}
+        alt="Green Bottom"
+        className="w-[1050px] absolute -top-40 hidden lm:block"
+      />
+     
+
+    <div className='flex flex-col items-center absolute container top-28 sm:top-52'>
 {/* <!-- component --> */}
-<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12">Roadmap</h1>
+<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 sm:text-4xl">Roadmap</h1>
 
 <ol >
   <li className="border-l-2 border-orange-600">

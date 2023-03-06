@@ -164,7 +164,7 @@
 
   #roadMap {
     background-color: #5fcde4;
-    height: 1900px;
+    height: 2000px;
   }
 
   #footer {
@@ -175,10 +175,10 @@
 }
 
 
-/* @media (min-width: 1020px) {
+@media (min-width: 769px) and (max-width: 1050px) {
 
   #mainMenu {
-    background-image: url("../src/assets/new/top-sky-mobile.png");
+    background-image: url("../src/assets/new/top-sky-desktop.png");
     background-color: #5fcde4;
     background-size: cover;
     background-position: center;
@@ -187,7 +187,7 @@
   }
 
   #hero {
-    background-image: url("../src/assets/new/midsky-mobile.png");
+    background-image: url("../src/assets/new/sky-lg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@
 
   #tokenDetail {
     background-color: #5fcde4;
-    height: 1160px;
+    height: 1000px;
   }
 
   #tokenomics {
@@ -215,10 +215,10 @@
 
   #footer {
     background-color: #754128;
-    height: 300px;
+    height: 200px;
   }
 
-} */
+}
 
 .hamburger {
     cursor: pointer;

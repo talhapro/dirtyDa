@@ -14,7 +14,7 @@ const HeroSection = () => {
             min-w-full min-h-full max-w-none">
         </video> */}
       {/* <img className='absolute lg:h-40 h-40 lg:bottom-10 lg:left-20 bottom-16 left-8' src={dog1} alt="coverImage"></img> */}
-    <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
+    <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 md:hidden">
   
       <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase tracking-wider max-w-md">
         Get in early on the AIDOGS pre-sale this month.
@@ -24,12 +24,12 @@ const HeroSection = () => {
         pre-sale will begin shortly.
       </p>
 
-      <div className="flex flex-col px-5 mt-36">
+      <div className="flex flex-col px-5 mt-36 md:max-w-md">
           <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center">
           What is Dirty AI Dogs?
           </h1>
 
-          <p className="mt-6 text-slate-800 font-bold text-md text-left tracking-wider">
+          <p className="mt-6 text-slate-800 font-bold text-md  tracking-wider">
           Dirty AI Dogs is a side-scrolling, PC and mobile game with 5,555 AI Dog NFTs! Racing to earn their spot atop the leaderboard. 
           Each dog will compete to earn their spot as the fastest dog in town!  Dirty AI Dogs is inspired by the classic “flappy birds” game. 
           Dirty AI Dogs is a fast-paced, win2Earn, skill-driven competitive game, aiming for real sustainability in the web3 gaming space. 
@@ -64,6 +64,30 @@ const HeroSection = () => {
         </a>
       </div> */}
     </div>
+    <div className="container mx-auto flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 hidden md:flex">
+  
+      <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase tracking-wider max-w-md">
+        Get in early on the AIDOGS pre-sale this month.
+      </h1>
+      <p className="px-8 mt-10 mb-8 text-xl font-bold">
+        AIDOGS is the ultimate play-to-earn platform, and the
+        pre-sale will begin shortly.
+      </p>
+    </div>
+    
+    <div className="container flex-col  px-5 mt-10 hidden md:flex text-left items-center pr-12 lm:items-end">
+      <div className='max-w-md'>
+          <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase">
+          What is Dirty AI Dogs?
+          </h1>
+
+          <p className="mt-6 text-slate-800 font-bold text-md  tracking-wider">
+          Dirty AI Dogs is a side-scrolling, PC and mobile game with 5,555 AI Dog NFTs! Racing to earn their spot atop the leaderboard. 
+          Each dog will compete to earn their spot as the fastest dog in town!  Dirty AI Dogs is inspired by the classic “flappy birds” game. 
+          Dirty AI Dogs is a fast-paced, win2Earn, skill-driven competitive game, aiming for real sustainability in the web3 gaming space.
+          </p>
+        </div>
+        </div>
   </section>
   </>
   )

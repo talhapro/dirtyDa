@@ -98,12 +98,12 @@ const Tokenomics = () => {
       <img
         src={leftRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px] absolute left-0"
+        className="h-[2300px] w-[85px] absolute left-0 lm:w-[180px]"
       />
       <img
         src={rightRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px]  absolute right-0"
+        className="h-[2300px] w-[85px]  absolute right-0 lm:w-[180px]"
       />
       <img
         src={upperRock}
@@ -113,15 +113,15 @@ const Tokenomics = () => {
       <img
         src={upperRockMd}
         alt="mountain-clif"
-        className="hidden sm:block absolute -top-56"
+        className="hidden sm:block absolute -top-56 lm:w-[1050px] lm:-top-[320px]"
       />
 
-      <div className="flex flex-col px-12 top-44 absolute">
+      <div className="flex flex-col px-12 top-44 absolute lm:top-52">
         <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center pt-6">
           DIRTY AI DOGS TOKEN
         </h1>
 
-        <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800">
+        <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800 lm:max-w-2xl">
           The Dirty AI Dogs Token ($AIDOGS) is the native token of the Dirty AI
           Dogs ecosystem. Some of the Dirty AI Dogs utilities are:
         </p>
@@ -261,20 +261,20 @@ const Tokenomics = () => {
       </div>
 
       {/* TOKENOMICS */}
-      <div className="flex flex-col container absolute bottom-28 items-center">
-        <h1 className="text-slate-800 text-3xl mb-4 text-center">TOKENOMICS</h1>
-
+      <div className="flex flex-col container absolute bottom-20 items-center">
+        <h1 className="text-slate-800 text-3xl mb-4 text-center ">TOKENOMICS</h1>
+      
         {/* SET 1 */}
-        <div className="flex flex-row justify-center mt-12 ">
+        <div className="flex flex-row justify-center mt-12 container">
           {/* ITEM 1 */}
-          <div className="mx-8 text-center">
+          <div className="mx-8 text-center lm:mx-20">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Token
             </h1>
             <p className="font-bold text-xl text-slate-800 ">Dirty AI Dogs</p>
           </div>
           {/* ITEM 2 */}
-          <div className="mx-8 text-center">
+          <div className="mx-8 text-center lm:mx-20">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Symbol
             </h1>
@@ -282,16 +282,16 @@ const Tokenomics = () => {
           </div>
         </div>
         {/* SET 2 */}
-        <div className="flex flex-row justify-center mt-12 items-center mb-16">
+        <div className="flex flex-row justify-center mt-12 items-center mb-16 container">
           {/* ITEM 1 */}
-          <div className="mx-8 text-center">
+          <div className="mx-8 text-center lm:mx-20">
             <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
               Total Supply
             </h1>
             <p className="font-bold text-xl text-slate-800 ">1,000,000,000</p>
           </div>
           {/* ITEM 2 */}
-          <div className="mx-8 text-center">
+          <div className="mx-8 text-center lm:mx-20">
             <h1 className="text-lg text-deep-purple-accent-400 mb-2 text-slate-200">
               Blockchain
             </h1>
@@ -309,7 +309,7 @@ const Tokenomics = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-center mt-12 items-center mb-20">
+        <div className="flex flex-col justify-center mt-12 items-center mb-20 lm:mt-24">
           {/* ITEM 1 */}
           <div className="text-center">
             <h1 className="text-3xl text-deep-purple-accent-400 mb-2 text-slate-200">

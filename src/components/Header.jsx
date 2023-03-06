@@ -66,7 +66,7 @@ const Header = () => {
               {/* <!-- Logo --> */}
               <img src={img} alt="" className=" w-auto h-28" />
               {/* <!-- Left Menu --> */}
-              <div className="hidden space-x-8 font-bold lg:flex items-center md:hidden">
+              <div className="hidden space-x-8 font-bold xl:flex items-center">
                 <a
                   href="/#"
                   className="text-grayishViolet hover:text-slate-800 px-3"
@@ -216,7 +216,7 @@ const Header = () => {
 
             {/* <!-- Right Buttons Menu --> */}
             <button
-              className="hidden pr-5 items-center font-bold lg:flex lg:overflow-clip "
+              className="hidden pr-5 items-center font-bold md:flex lg:overflow-clip md:-mr-72 lg:-mr-[500px] xl:mr-10"
               onClick={requestAccount}
             >
               <p className="px-8 py-3 font-bold text-white bg-amber-800 rounded-full hover:bg-green-800 hover:text-white">
@@ -229,7 +229,7 @@ const Header = () => {
             {/* <!-- Hamburger Button --> */}
             <button
               id="menu-btn"
-              className={`px-6 z-40 block hamburger lg:hidden focus:outline-none ${
+              className={`px-6 z-40 block hamburger xl:hidden focus:outline-none ${
                 isOpen ? "open" : ""
               }`}
               type="button"
