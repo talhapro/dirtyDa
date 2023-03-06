@@ -98,12 +98,12 @@ const Tokenomics = () => {
       <img
         src={leftRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px] absolute left-0 lm:w-[180px]"
+        className="h-[2300px] w-[85px] absolute left-0 lm:w-[180px] xll:h-[2800px]"
       />
       <img
         src={rightRock}
         alt="mountain-clif"
-        className="h-[2300px] w-[85px]  absolute right-0 lm:w-[180px]"
+        className="h-[2300px] w-[85px]  absolute right-0 lm:w-[180px] xll:h-[2800px]"
       />
       <img
         src={upperRock}
@@ -113,15 +113,15 @@ const Tokenomics = () => {
       <img
         src={upperRockMd}
         alt="mountain-clif"
-        className="hidden sm:block absolute -top-56 lm:w-[1050px] lm:-top-[320px]"
+        className="hidden sm:block absolute -top-56 lm:w-[1050px] lm:-top-[320px] lgg:w-[1440px] lgg:-top-[440px] xll:w-full xll:-top-[700px]"
       />
 
-      <div className="flex flex-col px-12 top-44 absolute lm:top-52">
-        <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center pt-6">
+      <div className="flex flex-col px-12 top-44 absolute lm:top-52 lgg:top-60 xll:top-[480px]">
+        <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase text-center pt-6 xll:text-5xl">
           DIRTY AI DOGS TOKEN
         </h1>
 
-        <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800 lm:max-w-2xl">
+        <p className="leading-relaxed font-bold text-lg pt-8 pb-1 text-slate-800 lm:max-w-2xl xll:text-2xl xll:max-w-3xl">
           The Dirty AI Dogs Token ($AIDOGS) is the native token of the Dirty AI
           Dogs ecosystem. Some of the Dirty AI Dogs utilities are:
         </p>
@@ -129,7 +129,7 @@ const Tokenomics = () => {
         {/* Item #1 */}
         <div className="flex flex-row items-center text-slate-800 pt-8 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -142,13 +142,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Staking</p>
+          <p className="text-lg font-bold xll:text-2xl">Staking</p>
         </div>
 
         {/* Item #2 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -161,13 +161,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">NFT Rentals</p>
+          <p className="text-lg font-bold xll:text-2xl">NFT Rentals</p>
         </div>
 
         {/* Item #3 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -180,13 +180,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Leaderboard Contest</p>
+          <p className="text-lg font-bold xll:text-2xl">Leaderboard Contest</p>
         </div>
 
         {/* Item #4 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -199,13 +199,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Daily Quest</p>
+          <p className="text-lg font-bold xll:text-2xl">Daily Quest</p>
         </div>
 
         {/* Item #5 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -218,13 +218,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Weekly Quest</p>
+          <p className="text-lg font-bold xll:text-2xl">Weekly Quest</p>
         </div>
 
         {/* Item #6 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -237,13 +237,13 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Tournament Mode</p>
+          <p className="text-lg font-bold xll:text-2xl">Tournament Mode</p>
         </div>
 
         {/* Item #6 */}
         <div className="flex flex-row items-center text-slate-800 pt-4 mx-4">
           <svg
-            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 "
+            className="text-slate-800 w-6 h-6 mr-3 flex-shrink-0 xll:w-8 xll:h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -256,46 +256,46 @@ const Tokenomics = () => {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             ></path>
           </svg>
-          <p className="text-lg font-bold">Monthly Jackpot Contest</p>
+          <p className="text-lg font-bold xll:text-2xl">Monthly Jackpot Contest</p>
         </div>
       </div>
 
       {/* TOKENOMICS */}
-      <div className="flex flex-col container absolute bottom-20 items-center">
-        <h1 className="text-slate-800 text-3xl mb-4 text-center ">TOKENOMICS</h1>
+      <div className="flex flex-col container absolute bottom-20 items-center xll:bottom-40">
+        <h1 className="text-slate-800 text-3xl mb-4 text-center xll:text-5xl">TOKENOMICS</h1>
       
         {/* SET 1 */}
         <div className="flex flex-row justify-center mt-12 container">
           {/* ITEM 1 */}
-          <div className="mx-8 text-center lm:mx-20">
-            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
+          <div className="mx-8 text-center lm:mx-32">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200 xll:text-3xl">
               Token
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">Dirty AI Dogs</p>
+            <p className="font-bold text-xl text-slate-800 xll:text-2xl">Dirty AI Dogs</p>
           </div>
           {/* ITEM 2 */}
-          <div className="mx-8 text-center lm:mx-20">
-            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
+          <div className="mx-8 text-center lm:mx-32">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200 xll:text-3xl">
               Symbol
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">AIDOGS</p>
+            <p className="font-bold text-xl text-slate-800 xll:text-2xl">AIDOGS</p>
           </div>
         </div>
         {/* SET 2 */}
         <div className="flex flex-row justify-center mt-12 items-center mb-16 container">
           {/* ITEM 1 */}
           <div className="mx-8 text-center lm:mx-20">
-            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-xl text-deep-purple-accent-400 mb-2 text-slate-200 xll:text-3xl">
               Total Supply
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">1,000,000,000</p>
+            <p className="font-bold text-xl text-slate-800 xll:text-2xl">1,000,000,000</p>
           </div>
           {/* ITEM 2 */}
           <div className="mx-8 text-center lm:mx-20">
-            <h1 className="text-lg text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-lg text-deep-purple-accent-400 mb-2 text-slate-200 xll:text-3xl">
               Blockchain
             </h1>
-            <p className="font-bold text-xl text-slate-800 ">BSC</p>
+            <p className="font-bold text-xl text-slate-800 xll:text-2xl">BSC</p>
           </div>
         </div>
 
@@ -312,34 +312,34 @@ const Tokenomics = () => {
         <div className="flex flex-col justify-center mt-12 items-center mb-20 lm:mt-24">
           {/* ITEM 1 */}
           <div className="text-center">
-            <h1 className="text-3xl text-deep-purple-accent-400 mb-2 text-slate-200">
+            <h1 className="text-3xl text-deep-purple-accent-400 mb-2 text-slate-200 xll:text-5xl">
               Taxes
             </h1>
-            <h1 className="font-bold text-2xl text-slate-800 pt-8">
+            <h1 className="font-bold text-2xl text-slate-800 pt-8 xll:text-3xl">
               BUY TAX 3%
             </h1>
-            <p className="font-bold text-md text-slate-800 pt-4">
+            <p className="font-bold text-md text-slate-800 pt-4 xll:text-xl">
               (1% Liquidity)
             </p>
-            <p className="font-bold text-md text-slate-800 pt-1">
+            <p className="font-bold text-md text-slate-800 pt-1 xll:text-xl">
               (1% Jackpot Wallet)
             </p>
-            <p className="font-bold text-md text-slate-800 pt-1">
+            <p className="font-bold text-md text-slate-800 pt-1 xll:text-xl">
               (1% Marketing)
             </p>
           </div>
           {/* ITEM 2 */}
           <div className="text-center">
-            <h1 className="font-bold text-2xl text-slate-800 pt-12">
+            <h1 className="font-bold text-2xl text-slate-800 pt-12 xll:text-3xl">
               Sell TAX 3%
             </h1>
-            <p className="font-bold text-md text-slate-800 pt-4">
+            <p className="font-bold text-md text-slate-800 pt-4 xll:text-xl">
               (1% Liquidity)
             </p>
-            <p className="font-bold text-md text-slate-800 pt-1">
+            <p className="font-bold text-md text-slate-800 pt-1 xll:text-xl">
               (1% Jackpot Wallet)
             </p>
-            <p className="font-bold text-md text-slate-800 pt-1">
+            <p className="font-bold text-md text-slate-800 pt-1 xll:text-xl">
               (1% Marketing)
             </p>
           </div>

@@ -220,6 +220,99 @@
 
 }
 
+
+@media (min-width: 1051px) and (max-width: 1440px) {
+
+  #mainMenu {
+    background-image: url("../src/assets/new/top-sky-desktop.png");
+    background-color: #5fcde4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+  }
+
+  #hero {
+    background-image: url("../src/assets/new/sky-lg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1300px;
+  }
+
+  #tokenDetail {
+    background-color: #5fcde4;
+    height: 1000px;
+  }
+
+  #tokenomics {
+    background-image: url("../src/assets/new/middle-cave.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2300px;
+  }
+
+
+  #roadMap {
+    background-color: #5fcde4;
+    height: 1900px;
+  }
+
+  #footer {
+    background-color: #754128;
+    height: 300px;
+  }
+
+}
+
+
+
+@media (min-width: 1441px) {
+
+  #mainMenu {
+    background-image: url("../src/assets/new/top-sky-desktop.png");
+    background-color: #5fcde4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+  }
+
+  #hero {
+    background-image: url("../src/assets/new/sky-lg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1300px;
+  }
+
+  #tokenDetail {
+    background-color: #5fcde4;
+    height: 1000px;
+  }
+
+  #tokenomics {
+    background-image: url("../src/assets/new/middle-cave.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2800px;
+  }
+
+
+  #roadMap {
+    background-color: #5fcde4;
+    height: 2100px;
+  }
+
+  #footer {
+    background-color: #754128;
+    height: 450px;
+  }
+
+}
+
 .hamburger {
     cursor: pointer;
     width: 24px;

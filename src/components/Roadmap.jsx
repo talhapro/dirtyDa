@@ -32,18 +32,23 @@ const Roadmap = () => {
       <img
         src={cloud3}
         alt="Cloud"
+        className="w-[250px] absolute top-[730px] right-32 hidden lm:block lgm:hidden"
+      />
+      <img
+        src={cloud2}
+        alt="Cloud"
         className="w-[250px] absolute top-[730px] right-32 hidden lm:block"
       />
       <img
         src={rBottomGreenDesk}
         alt="Green Bottom"
-        className="w-[1050px] absolute -top-40 hidden lm:block"
+        className="w-[1050px] absolute -top-40 hidden lm:block lgg:w-[1440px] lg:-top-52 xll:w-full xll:-top-80"
       />
      
 
-    <div className='flex flex-col items-center absolute container top-28 sm:top-52'>
+    <div className='flex flex-col items-center absolute container top-28 sm:top-52 lgg:top-80'>
 {/* <!-- component --> */}
-<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 sm:text-4xl">Roadmap</h1>
+<h1 className="text-3xl text-slate-800 font-bold mb-4 ml-3 p-12 sm:text-4xl xll:text-5xl">Roadmap</h1>
 
 <ol >
   <li className="border-l-2 border-orange-600">
@@ -53,9 +58,9 @@ const Roadmap = () => {
       </div>
       <div className="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div className="flex justify-between mb-4">
-          <h2 className="font-bold text-slate-800 text-md">Quarter 4 2022</h2>
+          <h2 className="font-bold text-slate-800 text-md xll:text-2xl">Quarter 4 2022</h2>
         </div>
-        <div className="text-gray-700  flex flex-col">
+        <div className="text-gray-700  flex flex-col xll:text-xl">
             <p>- Release V1 Website </p>
             <p>- Build Core Team</p>
             <p>- Concept Design</p>
@@ -75,9 +80,9 @@ const Roadmap = () => {
       </div>
       <div className="pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div className="flex justify-between mb-4">
-          <h2 className="font-bold text-slate-800 text-md">Quarter 1 2023</h2>
+          <h2 className="font-bold text-slate-800 text-md xll:text-2xl">Quarter 1 2023</h2>
         </div>
-        <div className="text-gray-700  flex flex-col">
+        <div className="text-gray-700  flex flex-col xll:text-xl">
             <p>- Launch Socials</p>
             <p>- Deploy Token</p>
             <p>- Smart Contract Audit</p>
@@ -103,9 +108,9 @@ const Roadmap = () => {
       </div>
       <div className="block pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div className="flex justify-between mb-4">
-          <h2 className="font-bold text-slate-800 text-md">Quarter 2 2023</h2>
+          <h2 className="font-bold text-slate-800 text-md xll:text-2xl">Quarter 2 2023</h2>
         </div>
-        <div className="text-gray-700  flex flex-col">
+        <div className="text-gray-700  flex flex-col xll:text-xl">
             <p>- CEX Listing</p>
             <p>- Release V2 Whitepaper </p>
             <p>- Release V2 Website</p>
@@ -123,9 +128,9 @@ const Roadmap = () => {
       </div>
       <div className="block pt-6 pl-6 pb-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10 lg:w-full md:w-full">
         <div className="flex justify-between mb-4">
-          <h2 className="font-bold text-slate-800 text-md">Quarter 3 2023</h2>
+          <h2 className="font-bold text-slate-800 text-md xll:text-2xl">Quarter 3 2023</h2>
         </div>
-        <div className="text-gray-700  flex flex-col">
+        <div className="text-gray-700  flex flex-col xll:text-xl">
             <p>- Release V3 Game Mode</p>
             <p>- Launch breeding option</p>
             <p>- Monetize app store ad revenue</p>

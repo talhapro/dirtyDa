@@ -66,22 +66,22 @@ const HeroSection = () => {
     </div>
     <div className="container mx-auto flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 hidden md:flex">
   
-      <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase tracking-wider max-w-md">
+      <h1 className="text-4xl font-bold leading-none text-slate-800 uppercase tracking-wider max-w-md lgg:max-w-4xl lgg:text-5xl">
         Get in early on the AIDOGS pre-sale this month.
       </h1>
-      <p className="px-8 mt-10 mb-8 text-xl font-bold">
+      <p className="px-8 mt-10 mb-8 text-xl font-bold lgg:max-w-4xl lgg:text-2xl">
         AIDOGS is the ultimate play-to-earn platform, and the
         pre-sale will begin shortly.
       </p>
     </div>
     
-    <div className="container flex-col  px-5 mt-10 hidden md:flex text-left items-center pr-12 lm:items-end">
-      <div className='max-w-md'>
-          <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase">
+    <div className="container flex-col  px-5 mt-10 hidden md:flex text-left items-center pr-12 lm:items-end lgg:pr-10 xll:mr-60">
+      <div className='max-w-md lgg:max-w-xl'>
+          <h1 className="text-3xl font-bold leading-none text-slate-800 uppercase lgg:text-4xl">
           What is Dirty AI Dogs?
           </h1>
 
-          <p className="mt-6 text-slate-800 font-bold text-md  tracking-wider">
+          <p className="mt-6 text-slate-800 font-bold text-md tracking-wider lgg: text-xl">
           Dirty AI Dogs is a side-scrolling, PC and mobile game with 5,555 AI Dog NFTs! Racing to earn their spot atop the leaderboard. 
           Each dog will compete to earn their spot as the fastest dog in town!  Dirty AI Dogs is inspired by the classic “flappy birds” game. 
           Dirty AI Dogs is a fast-paced, win2Earn, skill-driven competitive game, aiming for real sustainability in the web3 gaming space.
