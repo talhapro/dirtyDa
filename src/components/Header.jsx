@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import img from "../assets/dirty-dogs.png";
-import bDp1 from '../assets/new/top-sky.png';
 // import { ethers } from "ethers";
 import truncateEthAddress from "truncate-eth-address";
 
@@ -64,7 +63,7 @@ const Header = () => {
             {/* <!-- Flex Container For Logo/Menu --> */}
             <div className="flex items-center ml-6 space-x-20">
               {/* <!-- Logo --> */}
-              <img src={img} alt="" className=" w-auto h-28" />
+              <img src={img} alt="" className=" w-auto h-28 lg:h-32" />
               {/* <!-- Left Menu --> */}
               <div className="hidden space-x-8 font-bold xl:flex items-center">
                 <a
@@ -89,8 +88,8 @@ const Header = () => {
                   </button>
                 </a>
                 <a
-                  href="/#"
-                  className="text-grayishViolet hover:text-green-800 px-3"
+                  href="https://dirtyaidogs.gitbook.io/docs/" target="_blank"
+                  className="text-grayishViolet hover:text-green-800 px-3" rel="noreferrer"
                 >
                   <button className="flex flex-col items-center group">
                     <svg
@@ -271,8 +270,8 @@ const Header = () => {
                 </button>
               </a>
               <a
-                href="/#"
-                className="text-grayishViolet hover:text-slate-700 px-3 py-1"
+                href="https://dirtyaidogs.gitbook.io/docs/" target="_blank"
+                className="text-grayishViolet hover:text-slate-700 px-3 py-1" rel="noreferrer"
               >
                 <button className="flex items-center group">
                   <svg
@@ -396,12 +395,16 @@ const Header = () => {
                   </span>
                 </button>
               </a>
-              <a
-                href="/#"
-                className="w-full py-3 text-center rounded-full bg-amber-800 hover:bg-green-800 hover:text-white"
-              >
-                Connect Wallet
-              </a>
+              <button
+              className="py-2 w-full text-center rounded-full bg-amber-800 hover:bg-green-800 hover:text-white md:hidden"
+              onClick={requestAccount}
+            >
+              <p className="px-8 py-3 font-bold text-white bg-amber-800 rounded-full hover:bg-green-800 hover:text-white">
+                {walletAddress.length === 0
+                  ? "Connect Wallet"
+                  : truncateEthAddress(String(walletAddress))}
+              </p>
+            </button>
             </div>
           </div>
         </nav>
@@ -411,3 +414,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

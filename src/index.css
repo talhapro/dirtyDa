@@ -175,7 +175,7 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1050px) {
+@media (min-width: 768px) and (max-width: 1050px) {
 
   #mainMenu {
     background-image: url("../src/assets/new/top-sky-desktop.png");
@@ -183,7 +183,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 175px;
+    height: 400px;
   }
 
   #hero {
@@ -229,7 +229,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 175px;
+    height: 400px;
   }
 
   #hero {
@@ -276,7 +276,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 175px;
+    height: 400px;
   }
 
   #hero {
